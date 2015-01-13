@@ -2,12 +2,15 @@
   "name": "codesnip",
   "version": "0.1.0",
   "description": "code snip",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "~4.9.x"
+    "express": "~4.9.x",
+    "body-parser" : "1.5.2",
+    "bourne": "0.4.0",
+    "express-session": "1.7.4"
   },
   "engines": {
     "node": "0.10.x"

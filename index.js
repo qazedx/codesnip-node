@@ -1,13 +1,17 @@
-var express = require('express');
-var app = express();
+var express = require('express'),
+        api = require('./api'),
+        users = require('./accounts'),
+        app = express();
 
-app.set('port', (process.env.PORT || 3000));
-app.use(express.static(__dirname + '/public'));
-
-app.get('/', function(request, response) {
-  response.send('Hello Woj!');
-});
-
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
-});
+app
+        .use(express.static('./public'))
+        .use(users)
+        .use('/api', api)
+        .get('*', function (req, res) {
+            if (!req.user) {
+                res.redirect('/login');
+            } else {
+                res.sendfile('public/main.html');
+            }
+        })
+        .listen(5000);
