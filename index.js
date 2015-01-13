@@ -2,9 +2,9 @@ var express = require('express'),
         api = require('./api'),
         users = require('./accounts'),
         app = express();
-
+app.set('port', (process.env.PORT || 3000));
 app
-        .use(express.static('./public'))
+        .use(express.static(__dirname + '/public'))
         .use(users)
         .use('/api', api)
         .get('*', function (req, res) {
@@ -13,5 +13,4 @@ app
             } else {
                 res.sendfile('public/main.html');
             }
-        })
-        .listen(5000);
+        }).listen(3000);
