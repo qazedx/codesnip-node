@@ -1,0 +1,146 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'node-daemon',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'node-daemon', null ]
+6 verbose cache add name=undefined spec="node-daemon" args=["node-daemon",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'node-daemon',
+7 verbose parsed url   path: 'node-daemon',
+7 verbose parsed url   href: 'node-daemon' }
+8 silly lockFile c3a114ea-node-daemon node-daemon
+9 verbose lock node-daemon C:\Users\qazedx\AppData\Roaming\npm-cache\c3a114ea-node-daemon.lock
+10 silly lockFile c3a114ea-node-daemon node-daemon
+11 silly lockFile c3a114ea-node-daemon node-daemon
+12 verbose addNamed [ 'node-daemon', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 6ff507a9-node-daemon node-daemon@
+15 verbose lock node-daemon@ C:\Users\qazedx\AppData\Roaming\npm-cache\6ff507a9-node-daemon.lock
+16 silly addNameRange { name: 'node-daemon', range: '*', hasData: false }
+17 verbose request where is /node-daemon
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 4fca7ed3bb65bc22
+20 verbose url raw /node-daemon
+21 verbose url resolving [ 'https://registry.npmjs.org/', './node-daemon' ]
+22 verbose url resolved https://registry.npmjs.org/node-daemon
+23 verbose request where is https://registry.npmjs.org/node-daemon
+24 info trying registry request attempt 1 at 20:47:36
+25 verbose etag "D9L61G5MTCH7QR3YWU1KVYU5J"
+26 http GET https://registry.npmjs.org/node-daemon
+27 http 304 https://registry.npmjs.org/node-daemon
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Tue, 13 Jan 2015 18:47:35 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Tue, 13 Jan 2015 18:47:35 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"D9L61G5MTCH7QR3YWU1KVYU5J"',
+28 silly registry.get     age: '43',
+28 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1421174855.182050,VS0,VE0',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/node-daemon from cache
+30 silly addNameRange number 2 { name: 'node-daemon', range: '*', hasData: true }
+31 silly addNameRange versions [ 'node-daemon',
+31 silly addNameRange   [ '0.0.3',
+31 silly addNameRange     '0.0.4',
+31 silly addNameRange     '0.0.6',
+31 silly addNameRange     '0.0.9',
+31 silly addNameRange     '0.0.10',
+31 silly addNameRange     '0.0.11',
+31 silly addNameRange     '0.0.12',
+31 silly addNameRange     '0.0.13',
+31 silly addNameRange     '0.0.14',
+31 silly addNameRange     '0.0.15' ] ]
+32 verbose addNamed [ 'node-daemon', '0.0.15' ]
+33 verbose addNamed [ '0.0.15', '0.0.15' ]
+34 silly lockFile 0ce9af46-node-daemon-0-0-15 node-daemon@0.0.15
+35 verbose lock node-daemon@0.0.15 C:\Users\qazedx\AppData\Roaming\npm-cache\0ce9af46-node-daemon-0-0-15.lock
+36 silly lockFile 0ce9af46-node-daemon-0-0-15 node-daemon@0.0.15
+37 silly lockFile 0ce9af46-node-daemon-0-0-15 node-daemon@0.0.15
+38 silly lockFile 6ff507a9-node-daemon node-daemon@
+39 silly lockFile 6ff507a9-node-daemon node-daemon@
+40 silly resolved [ { name: 'node-daemon',
+40 silly resolved     version: '0.0.15',
+40 silly resolved     description: 'Runs a specified worker in a daemonized cluster',
+40 silly resolved     keywords: [ 'daemon', 'cluster', 'worker' ],
+40 silly resolved     os: [ 'darwin', 'linux' ],
+40 silly resolved     preferGlobal: true,
+40 silly resolved     repository: { type: 'git', url: 'git://github.com/urzhumskov/node-daemon' },
+40 silly resolved     bugs: { url: 'https://github.com/urzhumskov/node-daemon/issues' },
+40 silly resolved     homepage: 'https://github.com/urzhumskov/node-daemon',
+40 silly resolved     main: 'node-daemon.js',
+40 silly resolved     bin:
+40 silly resolved      { 'node-daemon': './node-daemon.js',
+40 silly resolved        'node-daemon-ctl': './node-daemon-ctl.js' },
+40 silly resolved     files:
+40 silly resolved      [ 'README.md',
+40 silly resolved        'LICENSE',
+40 silly resolved        'node-daemon.ls',
+40 silly resolved        'node-daemon-ctl.ls',
+40 silly resolved        'node-daemon.js',
+40 silly resolved        'node-daemon-ctl.js' ],
+40 silly resolved     scripts:
+40 silly resolved      { test: 'echo "Error: no test specified" && exit 1',
+40 silly resolved        prepublish: 'lsc -bc node-daemon.ls node-daemon-ctl.ls ; sed -i -f prepend-shebang.sed *.js ' },
+40 silly resolved     author:
+40 silly resolved      { name: 'Sergey Urzhumskov',
+40 silly resolved        email: 'sergey.urzhumskov@frumatic.com' },
+40 silly resolved     licenses: [ [Object] ],
+40 silly resolved     devDependencies: { LiveScript: '^1.2.0' },
+40 silly resolved     dependencies:
+40 silly resolved      { async: '^0.9.0',
+40 silly resolved        daemon: '^1.1.0',
+40 silly resolved        moment: '^2.6.0',
+40 silly resolved        optionator: '^0.4.0',
+40 silly resolved        pidusage: '0.0.4',
+40 silly resolved        'prelude-ls': '^1.1.1',
+40 silly resolved        prettysize: '0.0.3',
+40 silly resolved        winston: '^0.7.3' },
+40 silly resolved     engines: { node: '>= 0.8.0' },
+40 silly resolved     gitHead: '4e54113bfab885e558c44aa04cb512e7d57473ba',
+40 silly resolved     _id: 'node-daemon@0.0.15',
+40 silly resolved     _shasum: 'b38282bb7bf1182dfa0acf61da5f2c199a6913e4',
+40 silly resolved     _from: 'node-daemon@',
+40 silly resolved     _npmVersion: '1.4.13',
+40 silly resolved     _npmUser: { name: 'kinbot', email: 'kinbot@gmail.com' },
+40 silly resolved     maintainers: [ [Object] ],
+40 silly resolved     dist:
+40 silly resolved      { shasum: 'b38282bb7bf1182dfa0acf61da5f2c199a6913e4',
+40 silly resolved        tarball: 'http://registry.npmjs.org/node-daemon/-/node-daemon-0.0.15.tgz' },
+40 silly resolved     directories: {},
+40 silly resolved     _resolved: 'https://registry.npmjs.org/node-daemon/-/node-daemon-0.0.15.tgz',
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install node-daemon@0.0.15 into C:\Users\qazedx\AppData\Roaming\npm
+42 info installOne node-daemon@0.0.15
+43 error notsup Unsupported
+43 error notsup Not compatible with your operating system or architecture: node-daemon@0.0.15
+43 error notsup Valid OS:    darwin,linux
+43 error notsup Valid Arch:  any
+43 error notsup Actual OS:   win32
+43 error notsup Actual Arch: x64
+44 error System Windows_NT 6.1.7601
+45 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "node-daemon" "-g"
+46 error cwd C:\Users\qazedx\Gdrive\Documents\NetBeansProjects\codesnip-node
+47 error node -v v0.10.33
+48 error npm -v 1.4.28
+49 error code EBADPLATFORM
+50 verbose exit [ 1, true ]
