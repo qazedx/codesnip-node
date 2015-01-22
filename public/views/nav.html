@@ -1,8 +1,10 @@
 <nav class='navbar navbar-default'>
     <div class='container-fluid'>
         <ul class='nav navbar-nav'>
+            <li ng-class='{ active: PAGE === "youtube" }'><a href='/youtube'> Youtube </a></li>
             <li ng-class='{ active: PAGE === "all" }'><a href='/contacts'> All Contacts </a></li>
             <li ng-class='{ active: PAGE === "new" }'><a href='/contact/new'> New Contact </a></li>
+            <li ng-class='{ active: PAGE === "new" }'><a href='/test1'>test1 search</a></li>
         </ul>
         <ul class='nav navbar-nav navbar-right'>
             <li ng-class='{ active: PAGE === "settings" }'><a href='/settings'> Settings </a></li>
